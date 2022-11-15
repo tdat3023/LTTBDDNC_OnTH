@@ -8,26 +8,17 @@ import {
   FlatList,
   StyleSheet,
   TouchableOpacity,
-  ImageBackground,
-  SafeAreaView,
-  Image,
-  Dimensions,
-  Platform,
-  StatusBar,
-  RefreshControl,
 } from "react-native";
-import { AntDesign } from "@expo/vector-icons";
 
 function TypeItem({ item }) {
   return (
-    <View style={styles.viewOne}>
+    <TouchableOpacity style={styles.viewOne}>
       <Text style={styles.textName}>{item?.text}</Text>
-    </View>
+    </TouchableOpacity>
   );
 }
 const styles = StyleSheet.create({
   viewOne: {
-    backgroundColor: "blue",
     height: 40,
     width: 80,
     justifyContent: "center",
@@ -36,6 +27,7 @@ const styles = StyleSheet.create({
     marginRight: 10,
     marginBottom: 10,
     borderRadius: 20,
+    borderWidth: 1,
   },
 
   textName: {

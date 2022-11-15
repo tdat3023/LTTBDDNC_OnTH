@@ -1,7 +1,20 @@
 import React, { Component } from "react";
-import { View, SafeAreaView, Text } from "react-native";
-import { MaterialCommunityIcons, Ionicons } from "@expo/vector-icons";
-import Home from "./Home.js";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import HomePage from "./HomePage";
+import Wellcome from "./Wellcome";
+
+const Stack = createNativeStackNavigator();
 export default RootComponent = function () {
-  return <Home />;
+  return (
+    <NavigationContainer>
+      <Stack.Navigator
+        initialRouteName="Wellcome"
+        screenOptions={{ headerShown: false }}
+      >
+        <Stack.Screen name="Wellcome" component={Wellcome} />
+        <Stack.Screen name="HomePage" component={HomePage} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 };

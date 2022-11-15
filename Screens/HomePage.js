@@ -17,7 +17,7 @@ import TypeItem from "./TypeItem";
 import im1 from "../Image/im1.jpg";
 const NUM_COLUMN = 2;
 
-export default Home = function ({ props }) {
+export default HomePage = function ({ props }) {
   const [newValue, setNewValue] = useState("");
   const [id, setId] = useState(1);
   const [data, setData] = useState([
