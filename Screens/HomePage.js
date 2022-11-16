@@ -17,75 +17,71 @@ import TypeItem from "./TypeItem";
 import im1 from "../Image/im1.jpg";
 const NUM_COLUMN = 2;
 
-export default HomePage = function ({ props }) {
+export default HomePage = function () {
   const [newValue, setNewValue] = useState("");
   const [id, setId] = useState(1);
   const [data, setData] = useState([
     {
       id: 1,
       url: im1,
-      text: "Coffe",
+      text: "StarBucks Hot Coffe",
       price: 25,
     },
     {
       id: 2,
       url: im1,
-      text: "Coffe",
+      text: "StarBucks Hot Coffe",
       price: 25,
     },
     {
       id: 3,
       url: im1,
-      text: "Coffe",
+      text: "StarBucks Hot Coffe",
       price: 25,
     },
     {
       id: 4,
       url: im1,
-      text: "Coffe",
+      text: "StarBucks Hot Coffe",
       price: 25,
     },
     {
       id: 5,
       url: im1,
-      text: "Coffe",
+      text: "StarBucks Hot Coffe",
       price: 25,
     },
     {
       id: 6,
       url: im1,
-      text: "Coffe",
+      text: "StarBucks Hot Coffe",
       price: 25,
     },
     {
       id: 7,
       url: im1,
-      text: "Coffe",
+      text: "StarBucks Hot Coffe",
       price: 25,
     },
     {
       id: 8,
       url: im1,
-      text: "Coffe",
+      text: "StarBucks Hot Coffe",
       price: 25,
     },
   ]);
 
   const [typeData, setTypeData] = useState([
     {
-      id: 1,
       text: "Coffe1",
     },
     {
-      id: 2,
       text: "Coffe2",
     },
     {
-      id: 3,
       text: "Coffe3",
     },
     {
-      id: 4,
       text: "Coffe4",
     },
   ]);
@@ -154,11 +150,11 @@ const styles = StyleSheet.create({
   },
 
   header: {
-    marginTop: 10,
-    marginBottom: 10,
-    marginLeft: 10,
+    height: 60,
     flexDirection: "row",
     alignItems: "center",
+    justifyContent: "space-between",
+    paddingHorizontal: 10,
   },
 
   footer: {
